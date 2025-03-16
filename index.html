@@ -124,28 +124,7 @@
       </tbody>
    </table>
 
-      <button onclick="checkConnection()">Check Connection</button>
-
-    <script>
-         function checkConnection() {
-            // Create a new XMLHttpRequest object
-            var xhr = new XMLHttpRequest();
-
-            // Set the request type and the URL of the PHP file
-            xhr.open("GET", "https://ankitbanerjee.42web.io/Urmi-dev/connection.php", true);
-
-            // Set the response type to handle the result
-            xhr.onreadystatechange = function() {
-                if (xhr.readyState == 4 && xhr.status == 200) {
-                    // Display the response from PHP
-                    document.getElementById("connectionStatus").innerHTML = xhr.responseText;
-                }
-            };
-
-            // Send the request
-            xhr.send();
-        }
-    </script>
+     
    
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
